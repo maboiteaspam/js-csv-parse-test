@@ -1,0 +1,19 @@
+{
+  "name": "js-csv-parse-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": ">=1.0.1 <2.0.0-0",
+    "csv-streamify": ">=3.0.3 <4.0.0-0",
+    "csv2": ">=0.1.1 <1.0.0-0",
+    "node-csv": ">=0.1.2 <1.0.0-0",
+    "ya-csv": ">=0.9.4 <1.0.0-0"
+  }
+}
