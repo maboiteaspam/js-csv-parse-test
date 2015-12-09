@@ -46,7 +46,7 @@ Not THAT much different, right ? 9s. boom. 30% slower.
 
 So yes, streams are not a fast structure.
 
-se also below some more testing i made.
+see also below some more testing i made.
 
 
 ## Read more
