@@ -38,3 +38,17 @@ Bravo @rvagg !
 
 Those which are broken are probably fixable, feel free to PR.
 
+## Read more
+
+I tried to see if it s possible to make that faster.
+
+I m not js guru and so far it is not concluding. see `attempts/`
+
+I tried to split the load on 1+N processes and so far i used two ways to transport data from p1 to pN,
+
+stdin / Net socket.
+
+I can let you know that, on this computer@windows7@core i3, net socket is way much faster.
+
+:sad: it s much easier to spawn and pipe a process than, spawn, start server, then write/listen to a socket.
+
