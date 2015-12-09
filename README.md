@@ -23,20 +23,31 @@ http://www.maxmind.com/download/worldcities/worldcitiespop.txt.gz
 
 ## Results
 
-.. are surprising..
+.... Have been deleted. streams ain t fast.
 
-Lib  | duration
-------------- | -------------
-rvagg/csv2  | ~~ 9 seconds
-wdavidw/node-csv-parse  | broken ;/
-klaemo/csv-stream  | ~~ 55 seconds
-voodootikigod/node-csv  | broken ;/
-koles/ya-csv  | broken ;/
+Do this
 
+```js
+require('fs')
+  .createReadStream('../worldcitiespop.txt')
+  .pipe(require('csv2')())
+```
+Let s say you got an execution time of 6s.
 
-Bravo @rvagg !
+Do that
+```js
+require('fs')
+  .createReadStream('../worldcitiespop.txt')
+  .pipe(require('csv2')())
+  .pipe(through2.obj())
+```
 
-Those which are broken are probably fixable, feel free to PR.
+Not THAT much different, right ? 9s. boom. 30% slower.
+
+So yes, streams are not a fast structure.
+
+se also below some more testing i made.
+
 
 ## Read more
 
