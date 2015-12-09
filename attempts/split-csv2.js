@@ -1,7 +1,9 @@
 
 // pre cut by line, then split over N process and send via stdIO
-// 4 slaves: 27 seconds, windows 7, core i3
-// 3 slaves: 18 seconds, windows 7, core i3
+// 15 slaves: 70 seconds, windows 7, core i3
+// 8 slaves: 70 seconds, windows 7, core i3
+// 4 slaves: 60 seconds, windows 7, core i3
+// 3 slaves: 58 seconds, windows 7, core i3
 // 2 slaves: 52 seconds, windows 7, core i3
 // 1 slave: 45 seconds, windows 7, core i3
 
