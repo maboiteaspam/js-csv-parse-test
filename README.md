@@ -52,3 +52,19 @@ I can let you know that, on this computer@windows7@core i3, net socket is way mu
 
 :sad: it s much easier to spawn and pipe a process than, spawn, start server, then write/listen to a socket.
 
+## Some more
+
+I also tested on a much stronger machine
+```
+grep "model name" /proc/cpuinfo
+    model name      : Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
+    model name      : Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
+    model name      : Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
+    model name      : Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
+    model name      : Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
+    model name      : Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
+    model name      : Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
+    model name      : Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
+```
+
+You know what, it was slower 100% of the time.... the most simple test of csv2.js took 14 seconds... !!
